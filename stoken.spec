@@ -2,7 +2,7 @@ Summary:	Software Token for Linux/UNIX
 Summary(pl.UTF-8):	Token programowy dla systemów Linux/UNIX
 Name:		stoken
 Version:	0.2
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/stoken/%{name}-%{version}.tar.gz
