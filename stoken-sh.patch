@@ -1,0 +1,11 @@
+Changing shell from ksh to bash between configure and libtool calls breaks
+libtool (with ksh it's configured to use ksh print builtin).
+--- stoken-0.91/Makefile.am.orig	2017-01-09 07:05:30.000000000 +0100
++++ stoken-0.91/Makefile.am	2017-02-18 20:29:24.544009782 +0100
+@@ -1,6 +1,5 @@
+ AUTOMAKE_OPTIONS	= foreign subdir-objects
+ ACLOCAL_AMFLAGS		= -I m4
+-SHELL			= /bin/bash
+ 
+ AM_CPPFLAGS		= -DDATA_DIR=\"$(datadir)\"
+ AM_CFLAGS		= $(CRYPTO_CFLAGS) $(LIBXML2_CFLAGS) $(WFLAGS)
