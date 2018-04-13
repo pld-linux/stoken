@@ -6,12 +6,12 @@
 Summary:	Software Token for Linux/UNIX
 Summary(pl.UTF-8):	Token programowy dla systemów Linux/UNIX
 Name:		stoken
-Version:	0.91
+Version:	0.92
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/stoken/%{name}-%{version}.tar.gz
-# Source0-md5:	584432f22032f0a8a719272fa2329bcd
+# Source0-md5:	2b6d30cf0dfd7311794a54376c958cbc
 Patch0:		%{name}-sh.patch
 URL:		http://stoken.sourceforge.net/
 %{?with_java:BuildRequires:	ant}
@@ -19,7 +19,7 @@ BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake >= 1:1.11
 %{?with_gtk:BuildRequires:	gtk+3-devel >= 3.0}
 %{?with_java:BuildRequires:	jdk}
-BuildRequires:	libtomcrypt-devel
+BuildRequires:	libtomcrypt-devel >= 1.18
 BuildRequires:	libtool >= 2:2
 BuildRequires:	libxml2-devel >= 2
 BuildRequires:	pkgconfig >= 1:0.27
@@ -52,7 +52,7 @@ Summary:	Header files for stoken library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki stoken
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	libtomcrypt-devel
+Requires:	libtomcrypt-devel >= 1.18
 
 %description devel
 Header files for stoken library.
